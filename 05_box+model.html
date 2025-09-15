@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      #box1 {
+        background-color: bisque;
+        width: 240px;
+        height: 240px;
+
+        /* padding -> background color */
+        /* 상하좌우 일괄 적용 */
+        padding: 20px;
+        /* 위아래, 왼쪽 오른쪽 */
+        /* padding: 20px 40px; */
+        /* 위쪽,왼쪽오른쪽, 아래쪽 */
+        /* padding: 10px 20px 40px; */
+        /* 위쪽, 오른쪽, 아래쪽, 왼쪽 */
+        /* padding: 5px 10px 20px 40px; */
+
+        border: 1px black solid;
+        /* border-style: dashed; */
+
+        margin: 10px;
+        /* auto를 사용하면 가로 가운데 정렬 */
+        /* 크기에 포함되지 않음 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 개발자 도구 F12 -->
+    <div id="box1">
+      (div 같은 블록 display는) 내부의 컨텐츠 길이에 따라서 세로가 결정되며,
+      기본적으로는 가로 100%를 모두 점유함
+    </div>
+  </body>
+</html>
